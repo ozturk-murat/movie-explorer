@@ -1,31 +1,64 @@
 import { createTheme } from "@mui/material/styles";
-import { red } from "@mui/material/colors";
 
-// Create a theme instance.
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#556cd6",
+      main: "#fbc500",
     },
     secondary: {
-      main: "#440b4f",
+      main: "#fbc500",
     },
     error: {
-      main: red.A400,
+      main: "#FF0000",
     },
     text:{
-      primary: "#FFFFFF"
+      primary: "#333333"
     }
+
   },
   components: {
-    MuiCssBaseline: {
+    MuiAppBar: {
       styleOverrides: {
-        body:{
-            background: "linear-gradient(to right, #0f0c29, #302b63, #24243e) !important"
+        root: {
+          backgroundColor: "transparent",
+          boxShadow: "none",
+          borderBottom: "1px solid #fbc500"
+        },
+      }
+    },
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          "& fieldset": {
+            borderColor: "#fbc500",
+          },
         }
+      }
+    },
+    MuiToggleButton: {
+      styleOverrides: {
+        root: {
+          height: 56,
+          borderColor: "#fbc500",
+          "&.Mui-selected": {
+          },
+        },
       },
     },
-  }
+    MuiInputLabel: {
+      styleOverrides: {
+        root: {
+          color: "#fbc500"
+        }
+      }
+    }
+  },
+  typography: {
+    h1: {
+      fontFamily: 'Edu VIC WA NT, sans-serif',
+      fontWeight: 600,
+    },
+  },
 });
 
 export default theme;
