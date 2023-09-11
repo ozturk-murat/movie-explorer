@@ -11,10 +11,9 @@ const theme = createTheme({
     error: {
       main: "#FF0000",
     },
-    text:{
-      primary: "#333333"
-    }
-
+    text: {
+      primary: "#333333",
+    },
   },
   components: {
     MuiAppBar: {
@@ -22,9 +21,9 @@ const theme = createTheme({
         root: {
           backgroundColor: "transparent",
           boxShadow: "none",
-          borderBottom: "1px solid #fbc500"
+          borderBottom: "1px solid #fbc500",
         },
-      }
+      },
     },
     MuiTextField: {
       styleOverrides: {
@@ -32,15 +31,23 @@ const theme = createTheme({
           "& fieldset": {
             borderColor: "#fbc500",
           },
-        }
-      }
+        },
+      },
     },
     MuiToggleButton: {
       styleOverrides: {
         root: {
           height: 56,
           borderColor: "#fbc500",
-          "&.Mui-selected": {
+          "&.Mui-selected": {},
+        },
+      },
+    },
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          ":hover": {
+            backgroundColor: "transparent",
           },
         },
       },
@@ -48,14 +55,14 @@ const theme = createTheme({
     MuiInputLabel: {
       styleOverrides: {
         root: {
-          color: "#fbc500"
-        }
-      }
-    }
+          color: "#fbc500",
+        },
+      },
+    },
   },
   typography: {
     h1: {
-      fontFamily: 'Edu VIC WA NT, sans-serif',
+      fontFamily: "Edu VIC WA NT, sans-serif",
       fontWeight: 600,
     },
   },

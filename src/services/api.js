@@ -16,3 +16,14 @@ export const getMovies = async (searchParams) => {
   }
 };
 
+export const getMovie = async (imdbId) => {
+  try {
+    const response = await axios.get(
+      `${BASE_URL}?apikey=${API_KEY}&i=${imdbId}`
+    );
+    return response.data;
+  } catch (error) {
+    console.error("API isteği sırasında bir hata oluştu:", error);
+    throw error;
+  }
+};

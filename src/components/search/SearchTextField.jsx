@@ -7,14 +7,14 @@ import { updateSearchParams } from "../../redux/reducers/moviesSlice";
 function SearchTextField() {
   const dispatch = useDispatch();
   const { searchParams } = useSelector((state) => state.movies);
-  const { text } = useSelector((state) => state.movies.searchParams);
+  const { text, page } = useSelector((state) => state.movies.searchParams);
 
   const handleSearchInputChange = (e) => {
     const newText = e.target.value;
     dispatch(
       updateSearchParams({
         ...searchParams,
-        text: newText
+        text: newText,
       })
     );
   };

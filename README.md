@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# MOVIE EXPLORER APP
+Movie Explorer App is a web application that allows users to explore and search for movies and TV series. You can search for movies by title, year, type, and navigate through the search results. The app also provides detailed information about each movie or TV series, including plot, runtime, IMDb rating, and more.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
 
-## Available Scripts
+- Search for movies and TV series by title, year, and type.
+- View a list of search results with details such as title, year, IMDb ID, and type.
+- Click on a movie or TV series to view detailed information.
+- Navigate through the application with a user-friendly interface.
 
-In the project directory, you can run:
+## Technologies
 
-### `npm start`
+Movie Explorer App is built using the following technologies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React: A JavaScript library for building user interfaces.
+- React Router Dom: A library for implementing routing in React applications.
+- Material-UI: A popular React UI framework for creating modern and responsive web applications.
+- Redux Toolkit: A toolset for efficient Redux development, including state management and actions.
+- Axios: A promise-based HTTP client for making API requests.
+- OMDB API: An external API for fetching movie and TV series data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clone this project or download it as a ZIP file.
+```bash
+git clone https://github.com/ozturk-murat/movie-explorer.git
+```
+Navigate to the project directory.
+```bash
+cd movie-explorer
+```
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Install the dependencies by running the following command.
+```bash
+npm install
+```
+Install the dependencies by running the following command.
+```bash
+npm start
+```
+```bash
+Open http://localhost:3000 in your browser to view the Movie Explorer application.
+```
